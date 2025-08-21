@@ -1,4 +1,4 @@
-## Responsible AI: A Practical Guide to Mitigating Bias in Machine Learning
+## From Data Skew to Fair Outcomes: A Practical Guide to Mitigating Bias in Machine Learning
 
 ### **Introduction**
 
