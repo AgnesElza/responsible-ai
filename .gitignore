@@ -8,24 +8,24 @@ __pycache__/
 .venv
 env/
 venv/
-
-# Conda Environment
-# Keep the Conda environment out of the repository
-# and track only the environment file (e.g., environment.yml)
 .conda/
 /envs/
 
+# Pipenv / Poetry
+Pipfile.lock
+poetry.lock
+
 # Data
-# Ignore large data files that are not suitable for Git
 data/
 *.csv
 *.parquet
 *.feather
 *.zip
 *.jsonl
+*.tar.gz
+*.rar
 
 # Models and Checkpoints
-# Do not track trained models or model checkpoints
 models/
 model.h5
 *.pkl
@@ -34,18 +34,24 @@ model.h5
 *.pb
 
 # Jupyter Notebook
-# Ignore auto-generated checkpoint files
 .ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
 # IDE files
-# Visual Studio Code
 .vscode/
+.idea/
 
-# MacOS files
+# MacOS / System files
 .DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
 # Python secrets file
 secrets.py
+
+# Cache / experiment tracking
+*.cache/
+wandb/
+mlruns/
